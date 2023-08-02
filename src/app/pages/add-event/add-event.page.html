@@ -1,0 +1,351 @@
+<ion-header *ngIf="stepRegistration > 1">
+  <ion-toolbar>
+    <div class="d-flex align-center px-2 justify-between">
+      <div class="d-flex align-center">
+        <ion-icon (click)="back()" style="transform: rotate(-90deg);" class="back" name="chevron-up"></ion-icon>
+        <ion-title>Evènement: <span class="text-secondary">concert</span></ion-title>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div  *ngIf="stepRegistration === 1" class="position-relative h250">
+    <ion-img src="../../../assets/img/header-creation-event.png" class="header">
+    </ion-img>
+    <ion-header class="header-in-content">
+      <ion-toolbar>
+        <div class="d-flex align-center px-2 justify-between">
+          <div class="d-flex align-center">
+            <ion-icon (click)="back()" style="transform: rotate(-90deg);" class="back text-white" name="chevron-up"></ion-icon>
+            <ion-title class="text-white">Créer un événement ou une sortie</ion-title>
+          </div>
+        </div>
+      </ion-toolbar>
+    </ion-header>
+    <ion-input placeholder="De quel type s'agit t-il?" class="search"></ion-input>
+    <div class="block-list-hobbies">
+      <div class="block">
+        <div class="titre">
+          <h6 class="font12 text-primary m-0">
+            Catégorie <span class="text-secondary">prédefinie</span>
+          </h6>
+          <hr class="underlined-bottom">
+        </div>
+        <div class="content-list">
+          <ion-row class="my-2">
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+      <div class="block">
+        <div class="titre">
+          <h6 class="font12 text-primary m-0">
+            Catégorie <span class="text-secondary">personnalisées</span>
+          </h6>
+          <hr class="underlined-bottom">
+        </div>
+        <div class="content-list">
+          <ion-row class="my-2">
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="3">
+              <div class="text-center">
+                <div class="block-icon d-flex justify-center align-center">
+                  <ion-icon src="../../../assets/icon/default/hobbie1.svg"></ion-icon>
+                </div>
+                <p class="text-primary">
+                  Concert
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+      <div class="flex-bouton-bottom block-dots mt-2">
+        <ion-button
+          [class]="stepRegistration > 1?'':'opacity0'"
+          (click)="stepPrecedent()"
+        >
+          Précedent
+        </ion-button>
+        <div class="d-flex dots">
+          <div [class]="stepRegistration === 1?'active':''" class="dots-item"></div>
+          <div [class]="stepRegistration === 2?'active':''" class="dots-item"></div>
+          <!-- <div [class]="stepRegistration === 3?'active':''" class="dots-item"></div> -->
+        </div>
+        <ion-button *ngIf="stepRegistration < 2" (click)="stepSuivant()"> Suivant </ion-button>
+        <ion-button *ngIf="stepRegistration === 2" (click)="publier()"> Publier </ion-button>
+      </div>
+    </div>
+  </div>
+  <ion-card *ngIf="stepRegistration === 2" class="around-bottom">
+    <div class="titre">
+      <h6 class="font12 text-primary m-0">
+        A propos
+      </h6>
+      <hr class="underlined-bottom">
+    </div>
+    <div class="form-input my-2">
+      <div class="d-flex justify-between align-center my-2">
+        <div class="block-left">
+          <ion-icon src="../../../assets/icon/default/event/ember.svg"></ion-icon>
+        </div>
+        <div class="block-center input1 w-100">
+          <ion-input class="w-100 font11 text-left" placeholder="Titre de l'évènement"></ion-input>
+        </div>
+        <div class="block-right">
+        </div>
+      </div>
+      <div class="d-flex justify-between align-center my-2">
+        <div class="block-left">
+          <ion-icon color="primary" name="calendar"></ion-icon>
+        </div>
+        <div class="block-center input3 w-100">
+          <ion-select class="font11 text-left"></ion-select>
+          <ion-select class="font11 text-left"></ion-select>
+          <ion-select class="font11 text-left"></ion-select>
+        </div>
+        <div class="block-right">
+        </div>
+      </div>
+      <div class="d-flex justify-between align-center my-2">
+        <div class="block-left">
+          <ion-icon color="primary" name="time"></ion-icon>
+        </div>
+        <div class="block-center input3 w-100">
+          <ion-select class="font11 text-left"></ion-select>
+          <ion-select class="font11 text-left"></ion-select>
+        </div>
+        <div class="block-right">
+        </div>
+      </div>
+      <div class="d-flex justify-between align-center my-2">
+        <div class="block-left">
+          <ion-icon  color="primary" name="location"></ion-icon>
+        </div>
+        <div class="block-center input1 w-100">
+          <ion-input class="w-100 font11 text-left" placeholder="Titre de l'évènement"></ion-input>
+        </div>
+        <div class="block-right">
+          <ion-icon color="primary" name="add-circle"></ion-icon>
+        </div>
+      </div>
+      <p class="my-2">
+        Fin d'inscription
+      </p>
+      <div class="d-flex justify-between align-center my-2">
+        <div class="block-left">
+          <ion-icon color="primary" name="calendar"></ion-icon>
+        </div>
+        <div class="block-center input3 w-100">
+          <ion-select class="font11 text-left"></ion-select>
+          <ion-select class="font11 text-left"></ion-select>
+          <ion-select class="font11 text-left"></ion-select>
+        </div>
+        <div class="block-right">
+        </div>
+      </div>
+      <div class="d-flex justify-between align-center my-2">
+        <div class="block-left">
+          <ion-icon color="primary" name="time"></ion-icon>
+        </div>
+        <div class="block-center input3 w-100">
+          <ion-select class="font11 text-left"></ion-select>
+          <ion-select class="font11 text-left"></ion-select>
+        </div>
+        <div class="block-right">
+        </div>
+      </div>
+      <p class="my-2">
+        Prix d'entrée:
+      </p>
+      <ion-radio-group class="d-flex align-center">
+        <div class="d-flex align-center">
+          <ion-radio value="Gratuit"></ion-radio>
+          <p class="text-primary pl-2">
+            Gratuit
+          </p>
+        </div>
+        <div class="d-flex align-center pl-4">
+          <ion-radio value="Payant"></ion-radio>
+          <p class="text-primary pl-2">
+            Payant
+          </p>
+        </div>
+      </ion-radio-group>
+      <hr>
+      <div class="titre">
+        <h6 class="font12 text-primary m-0">
+          Hobbies concernés
+        </h6>
+        <hr class="underlined-bottom">
+      </div>
+      <div class="d-flex justify-between align-center my-2">
+        <div class="block-center input1 w-100">
+          <ion-input class="w-100 font11 text-left" placeholder="Ajout un hobbie(Facultatif)"></ion-input>
+        </div>
+        <div class="block-right">
+          <ion-icon color="primary" name="add-circle"></ion-icon>
+        </div>
+      </div>
+      <hr>
+      <div class="titre">
+        <h6 class="font12 text-primary m-0">
+          Plus d'information
+        </h6>
+        <hr class="underlined-bottom">
+      </div>
+      <p class="my-2">
+        Description:
+      </p>
+      <textarea class="input-glob"></textarea>
+      <p class="my-2">
+        Organisateur:
+      </p>
+      <div class="d-flex justify-between align-center my-2">
+        <div class="block-center input1 w-100">
+          <ion-input class="w-100 font11 text-left" placeholder="Ajouter d'autre organisateur"></ion-input>
+        </div>
+        <div class="block-right">
+          <ion-icon color="primary" name="add-circle"></ion-icon>
+        </div>
+      </div>
+      <p class="my-2">
+        Photos de l'évènement
+      </p>
+      <ion-row>
+        <ion-col size="4">
+          <ion-img class="w-100 h150" src="../../../assets/icon/default/add-img.png"></ion-img>
+        </ion-col>
+        <ion-col size="4">
+          <ion-img class="w-100 item-img" src="../../../assets/img/header-creation-event.png"></ion-img>
+        </ion-col>
+        <ion-col size="4">
+          <ion-img class="w-100 item-img" src="../../../assets/img/header-creation-event.png"></ion-img>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+  <div *ngIf="stepRegistration > 1" class="flex-bouton-bottom block-dots px-2 mt-2 mb-2">
+    <ion-button
+      [class]="stepRegistration > 1?'':'opacity0'"
+      (click)="stepPrecedent()"
+    >
+      Précedent
+    </ion-button>
+    <div class="d-flex dots">
+      <div [class]="stepRegistration === 1?'active':''" class="dots-item"></div>
+      <div [class]="stepRegistration === 2?'active':''" class="dots-item"></div>
+      <!-- <div [class]="stepRegistration === 3?'active':''" class="dots-item"></div> -->
+    </div>
+    <ion-button *ngIf="stepRegistration < 2" (click)="stepSuivant()"> Suivant </ion-button>
+    <ion-button *ngIf="stepRegistration === 2" (click)="publier()"> Publier </ion-button>
+  </div>
+</ion-content>

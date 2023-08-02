@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.568" height="67.568" viewBox="0 0 67.568 67.568">
+    <defs>
+      <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#f16f3c"/>
+        <stop offset="1" stop-color="#d55f30"/>
+      </linearGradient>
+    </defs>
+    <path id="Icon_material-chat-bubble" data-name="Icon material-chat-bubble" d="M63.811,3H9.757A6.777,6.777,0,0,0,3,9.757V70.568L16.514,57.054h47.3A6.777,6.777,0,0,0,70.568,50.3V9.757A6.777,6.777,0,0,0,63.811,3Z" transform="translate(-3 -3)" fill="url(#linear-gradient)"/>
+  </svg>
+  

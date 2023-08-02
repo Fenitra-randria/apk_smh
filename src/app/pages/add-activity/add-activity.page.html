@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="d-flex align-center px-2 justify-between">
+      <div class="d-flex align-center">
+        <ion-icon (click)="back()" style="transform: rotate(-90deg);" class="back" name="chevron-up"></ion-icon>
+        <ion-title>Créer un <span class="text-secondary">activité</span></ion-title>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="around-bottom">
+    <div class="info-profile mb-1">
+      <div class="d-flex align-center">
+        <ion-img class="img-user" src="../../../assets/img/pub1.jpg"></ion-img>
+        <div class="pl-1">
+          <p>
+            <span class="text-primary limite1-lign text-bold"> John Doe </span>
+            <ion-icon name="share" color="secondary"></ion-icon>
+            <span class="text-primary">
+              Ajouter un humeur
+            </span>
+          </p>
+          <p class="limite1-lign">
+            <ion-icon name="location"></ion-icon>
+            Confidentialité
+            <ion-icon name="chevron-down"></ion-icon>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <div class="input-glob ">
+        <ion-icon name="location" color="primary"></ion-icon>
+        <p class="pl-1">Ajouter un lieu</p>
+      </div>
+      <div class="input-glob ">
+        <p class="pl-1">Choisir au moins un hobbie</p>
+      </div>
+      <textarea class="input-glob"></textarea>
+      <div class="d-flex justify-end publier">
+        <ion-button>
+          Publier
+        </ion-button>
+      </div>
+    </div>
+  </ion-card>
+  <div class="menu-tab d-flex align-center">
+    <ion-button class="d-flex align-center" (click)="activeMenu='gallery-image'" [class]="activeMenu==='gallery-image'?'active':''">
+      <ion-icon name="image" class="pr-1"></ion-icon>
+      Gallery image
+    </ion-button>
+    <ion-button class="d-flex align-center" (click)="activeMenu='camera'" [class]="activeMenu==='camera'?'active':''">
+      <ion-icon name="camera" class="pr-1"></ion-icon>
+      Caméra
+    </ion-button>
+    <ion-button class="d-flex align-center" (click)="activeMenu='identier'" [class]="activeMenu==='identier'?'active':''">
+      <ion-icon name="person" class="pr-1"></ion-icon>
+      Identier
+    </ion-button>
+  </div>
+</ion-content>

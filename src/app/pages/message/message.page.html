@@ -1,0 +1,597 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="d-flex align-center px-2 justify-between">
+      <div class="d-flex align-center">
+        <ion-icon (click)="back()" style="transform: rotate(-90deg);" class="back" name="chevron-up"></ion-icon>
+        <ion-title>Ma <span class="text-secondary">messagerie</span></ion-title>
+      </div>
+      <ion-icon color="dark" name="search"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="menu-tab d-flex align-center">
+    <ion-button (click)="activeMenu='conversations'" [class]="activeMenu==='conversations'?'active':''">
+      Convérsation
+    </ion-button>
+    <ion-button (click)="activeMenu='demande'" [class]="activeMenu==='demande'?'active':''">
+      Demande
+    </ion-button>
+    <ion-button (click)="activeMenu='parametre'" [class]="activeMenu==='parametre'?'active':''">
+      Paramètre
+    </ion-button>
+  </div>
+  <div *ngIf="activeMenu==='conversations'">
+    <div class="block-card">
+      <div class="block-card-header d-flex justify-between align-center">
+        <p class="text-primary px-2 m-0">
+          Mes <span class="text-secondary">groups de messagerie</span>
+        </p>
+        <p class="text-primary px-2 m-0">
+          Voir tous
+        </p>
+      </div>
+      <ion-row class="mt-2">
+        <ion-col size="4">
+          <div class="direction-column item-mesgroup d-flex justify-between align-center">
+            <div class="list-img-member-group">
+              <div class="img-personne m-auto">
+                <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+              </div>
+              <div class="img-personne m-auto">
+                <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+              </div>
+            </div>
+            <p class="mt-2 text-primary text-center">
+              Jao, Fetra, ...
+            </p>
+            <div class="floating img-personne counting m-auto d-flex justify-center align-center font11 text-secondary">
+              +50
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="direction-column item-mesgroup d-flex justify-between align-center">
+            <div class="list-img-member-group">
+              <div class="img-personne m-auto">
+                <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+              </div>
+              <div class="img-personne m-auto">
+                <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+              </div>
+            </div>
+            <p class="mt-2 text-primary text-center">
+              Jao, Fetra, ...
+            </p>
+            <div class="floating img-personne counting m-auto d-flex justify-center align-center font11 text-secondary">
+              +50
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <div class="direction-column item-mesgroup d-flex justify-between align-center">
+            <div class="list-img-member-group">
+              <div class="img-personne m-auto">
+                <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+              </div>
+              <div class="img-personne m-auto">
+                <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+              </div>
+            </div>
+            <p class="mt-2 text-primary text-center">
+              Jao, Fetra, ...
+            </p>
+            <div class="floating img-personne counting m-auto d-flex justify-center align-center font11 text-secondary">
+              +50
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="block-card">
+      <div class="block-card-header d-flex align-center justify-between">
+        <p class="text-primary px-2 m-0">
+          Mes <span class="text-secondary">conversations</span>
+        </p>
+        <p class="text-primary px-2 m-0">
+          <ion-icon class="text-primary" name="filter"></ion-icon>
+          Filtres
+        </p>
+      </div>
+      <div class="list-invte">
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+    <div class="d-flex justify-center align-center">
+      <p class="text-primary">
+        chargement...
+      </p>
+    </div>
+    <ion-button class="action-plus-floate">
+      <ion-icon name="add"></ion-icon>
+    </ion-button>
+  </div>
+  <div *ngIf="activeMenu==='demande'">
+    <div class="block-card">
+      <div class="block-card-header d-flex align-center justify-between">
+        <p class="text-primary px-2 m-0">
+          Mes <span class="text-secondary">demandes</span>
+        </p>
+        <p class="text-primary px-2 m-0">
+          <ion-icon class="text-primary" name="filter"></ion-icon>
+          Filtres
+        </p>
+      </div>
+      <div class="list-invte">
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="around-bottom">
+          <div class="d-flex align-center">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <div class="d-flex align-center justify-between">
+                <p class="text-primary">
+                  John Doe
+                </p>
+                <p>
+                  A l'instant
+                </p>
+              </div>
+              <p>
+                <ion-icon name="share"></ion-icon> 
+                I like this version
+              </p>
+            </div>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+    <div class="d-flex justify-center align-center">
+      <p class="text-primary">
+        chargement...
+      </p>
+    </div>
+    <ion-button class="action-plus-floate">
+      <ion-icon name="add"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

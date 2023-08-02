@@ -1,0 +1,39 @@
+<ion-content>
+  <div class="mes-groups">
+    <app-mescommunity></app-mescommunity>
+  </div>
+  <div class="mes-groups">
+    <app-listinvitecommunity></app-listinvitecommunity>
+  </div>
+  <div class="mes-groups">
+    <app-listcommunity></app-listcommunity>
+  </div>
+  <div class="block-card">
+    <div class="block-card-header d-flex justify-between align-center">
+      <h6 class="text-primary px-2 m-0">
+        Actualités <span class="text-secondary">des communautés</span>
+      </h6>
+      <h6 class="text-primary px-2 m-0">
+        Voir tous
+      </h6>
+    </div>
+    <div class="list-publication">
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <div class="d-flex justify-center align-center">
+        <p class="text-primary">
+          chargement...
+        </p>
+      </div>
+    </div>
+  </div>
+  <ion-button (click)="verPage('add-community')" class="action-plus-floate">
+    <ion-icon name="add"></ion-icon>
+  </ion-button>
+</ion-content>
+

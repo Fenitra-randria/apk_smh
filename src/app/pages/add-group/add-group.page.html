@@ -1,0 +1,193 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="d-flex align-center px-2 justify-between">
+      <div class="d-flex align-center">
+        <ion-icon (click)="back()" style="transform: rotate(-90deg);" class="back" name="chevron-up"></ion-icon>
+        <ion-title>Créer un <span class="text-secondary">nouveau groupe</span></ion-title>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="block-img-group d-flex justify-center align-center position-relative">
+    <ion-icon src="../../assets/icon/landing/group.svg"></ion-icon>
+    <ion-img class="add-img-group" src="../../../assets/icon/default/add-img.png"></ion-img>
+  </div>
+  <div class="block-card">
+    <div class="block-card-header d-flex justify-between align-center">
+      <div class="d-flex align-center">
+        <p class="text-primary px-2 m-0">
+          A <span class="text-secondary">propos</span> 
+        </p>
+      </div>
+    </div>
+    <div class="form">
+      <ion-input class="input-glob font11" placeholder="Donner un nom au group"></ion-input>
+      <textarea placeholder="Donner un petit description" class="input-glob font11"></textarea>
+    </div>
+  </div>
+  <div class="block-card">
+    <div class="block-card-header d-flex justify-between align-center">
+      <div class="d-flex align-center">
+        <p class="text-primary px-2 m-0">
+          Configurer <span class="text-secondary">le groupe</span> 
+        </p>
+      </div>
+    </div>
+    <div class="form">
+      <div class="d-flex align-center justify-between my-1">
+        <div class="d-flex align-center">
+          <ion-icon color="primary" name="share" class="pr-1"></ion-icon>
+          <p class="text-primary">
+            Confidentialité
+          </p>
+        </div>
+        <p class="text-primary">
+          Privé 
+          <ion-icon color="primary" name="chevron-down"></ion-icon>
+        </p>
+      </div>
+      <div class="d-flex align-center justify-between my-1">
+        <div class="d-flex align-center">
+          <ion-icon color="primary" name="person" class="pr-1"></ion-icon>
+          <p class="text-primary">
+            Invitations
+          </p>
+        </div>
+        <p class="text-primary">
+          tout le monde 
+          <ion-icon color="primary" name="chevron-down"></ion-icon>
+        </p>
+      </div>
+      <p>
+        ate nesciunt nam eligendi obcaecati recusandae dolor sunt natus suscipit quos.
+      </p>
+      <div class="d-flex align-center justify-between my-1">
+        <div class="d-flex align-center">
+          <ion-icon color="primary" name="share" class="pr-1"></ion-icon>
+          <p class="text-primary">
+            Valider les invitations automatiquement
+          </p>
+        </div>
+        <!-- <ion-switch></ion-switch> -->
+      </div>
+      <p>
+        ate nesciunt nam eligendi obcaecati recusandae dolor sunt natus suscipit quos.
+      </p>
+    </div>
+  </div>
+  <div class="block-card">
+    <div class="block-card-header d-flex justify-between align-center">
+      <div class="d-flex align-center">
+        <p class="text-primary px-2 m-0">
+          Role dans <span class="text-secondary">le groupe</span> 
+        </p>
+      </div>
+      <p class="text-primary px-2 m-0">
+        Ajouter une personne
+      </p>
+    </div>
+    <div class="form">
+      <p class="text-black">
+        voluptas voluptate voluptates seqvoluptas voluptate voluptates seqvoluptas voluptate voluptates seq
+      </p>
+      <div class="list-personne">
+        <div class="d-flex align-start justify-between py-1 item-personne">
+          <div class="d-flex align-start">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <p class="text-primary">
+                John Doe
+              </p>
+              <p>
+                28 publications
+              </p>
+              <p>
+                Animateur | 3 hobbie en communs
+              </p>
+            </div>
+          </div>
+          <ion-icon color="primary" name="share"></ion-icon>
+        </div>
+        <div class="d-flex align-start justify-between py-1 item-personne">
+          <div class="d-flex align-start">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <p class="text-primary">
+                John Doe
+              </p>
+              <p>
+                28 publications
+              </p>
+              <p>
+                Animateur | 3 hobbie en communs
+              </p>
+            </div>
+          </div>
+          <ion-icon color="primary" name="share"></ion-icon>
+        </div>
+        <div class="d-flex align-start justify-between py-1 item-personne">
+          <div class="d-flex align-start">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <p class="text-primary">
+                John Doe
+              </p>
+              <p>
+                28 publications
+              </p>
+              <p>
+                Animateur | 3 hobbie en communs
+              </p>
+            </div>
+          </div>
+          <ion-icon color="primary" name="share"></ion-icon>
+        </div>
+        <div class="d-flex align-start justify-between py-1 item-personne">
+          <div class="d-flex align-start">
+            <div class="position-relative">
+              <div class="img-personne m-auto">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            </div>
+            <div class="position-relative details-event w-100">
+              <p class="text-primary">
+                John Doe
+              </p>
+              <p>
+                28 publications
+              </p>
+              <p>
+                Animateur | 3 hobbie en communs
+              </p>
+            </div>
+          </div>
+          <ion-icon color="primary" name="share"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form">
+    <div class="flex-bouton-bottom">
+      <ion-button>
+        Annuler
+      </ion-button>
+      <ion-button>
+        Valider la création
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

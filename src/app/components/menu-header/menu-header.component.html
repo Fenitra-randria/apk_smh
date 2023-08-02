@@ -1,0 +1,117 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+      <ion-toolbar>
+          <ion-grid class="container absolute-header">
+              <ion-grid class="headerGGlobales justify-end d-flex p-0">
+                  <ion-icon (click)="hideMenu()" name="chevron-back-outline"></ion-icon>
+              </ion-grid>
+          </ion-grid>
+          <ion-grid class="name-cooperative px-0 d-flex justify-start">
+            <div class="img-personne">
+                <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+              </div>
+              <div class="ml-2 max-100">
+                  <p class="m-0 mt-1 font12 limite1lign text-primary text-bold">
+                    John Doe
+                  </p>
+                  <p class="m-0 font10">
+                    @johndoe
+                  </p>
+                  <p class="m-0 font10">
+                    johndoe@gmail.com
+                  </p>
+              </div>
+          </ion-grid>
+      </ion-toolbar>
+  </ion-header>
+  <ion-content class="bg-white">
+      <ion-grid class="container direction-column">
+          <ion-grid class="menu-profile w-100">
+            <p class="text-primary text-bold">
+                Rubrique
+            </p>
+              <div class="item-menu-show d-flex align-center justify-between">
+                  <p>
+                    <ion-icon class="pr-1" color="primary" name="person"></ion-icon>
+                    Profile
+                  </p>
+                  <div class="count">
+                      10
+                  </div>
+              </div>
+              <div class="item-menu-show d-flex align-center justify-between">
+                  <p>
+                    <ion-icon class="pr-1" color="primary" name="person"></ion-icon>
+                    Amis
+                  </p>
+                  <div class="count">
+                      10
+                  </div>
+              </div>
+              <div class="item-menu-show d-flex align-center justify-between">
+                  <p>
+                    <ion-icon class="pr-1" color="primary" name="person"></ion-icon>
+                    Groupes
+                  </p>
+                  <div class="count">
+                      10
+                  </div>
+              </div>
+              <div class="item-menu-show d-flex align-center justify-between">
+                  <p>
+                    <ion-icon class="pr-1" color="primary" name="person"></ion-icon>
+                    Evènement
+                  </p>
+                  <div class="count">
+                      10
+                  </div>
+              </div>
+              <div class="item-menu-show d-flex align-center justify-between">
+                  <p>
+                    <ion-icon class="pr-1" color="primary" name="person"></ion-icon>
+                    Communauté
+                  </p>
+                  <div class="count">
+                      10
+                  </div>
+              </div>
+              <p class="text-primary text-bold">
+                  Réglage
+              </p>
+              <div class="item-menu-show d-flex align-center justify-between">
+                  <p>
+                    <ion-icon class="pr-1" color="primary" name="settings-sharp"></ion-icon>
+                    Paramètres
+                  </p>
+                  <div class="count">
+                      10
+                  </div>
+              </div>
+              <div (click)="showmodaldisconnect()" class="item-menu-show d-flex align-center justify-between">
+                  <p>
+                    <ion-icon class="pr-1" color="primary" name="log-out"></ion-icon>
+                    Se déconnecter
+                  </p>
+              </div>
+
+              <ion-modal class="disconnect" #modaldisconnect [isOpen]="modalDeconnect">
+                  <ng-template>
+                      <div class="bg-white padding-indisk">
+                          <h5 class="font11 text-black text-center">Vous voullez vraiment se <span class="color-secondary">déconnecter ?</span></h5>
+                          <hr class="w-100 opacity02">
+                          <ion-grid class="flex-bouton-bottom">
+                              <ion-button (click)="showmodaldisconnect()">
+                                  Annuler
+                              </ion-button>
+                              <ion-button (click)="deconnect('login')">
+                                  Ok
+                              </ion-button>
+                          </ion-grid>
+                      </div>
+                  </ng-template>
+              </ion-modal>
+          </ion-grid>
+      </ion-grid>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>

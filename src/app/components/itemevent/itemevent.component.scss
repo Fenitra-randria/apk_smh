@@ -1,0 +1,21 @@
+.img-event {
+    height: 120px;
+    width: 90px;
+    object-fit: cover;
+    border-radius: 5px 5px 15px 5px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.date-event {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 25px;
+    width: fit-content;
+    right: 10px;
+    font-size: 14px;
+}
+.flex-bouton-bottom ion-button:first-child {
+    border: 1px #e1e1e1d9 solid;
+}

@@ -1,0 +1,234 @@
+<ion-content>
+  <div class="h-100 d-flex justify-center align-center">
+    <ion-grid class="text-center form">
+      <ion-img
+        class="logo-default1"
+        src="../../assets/icon/favicon.png"
+      ></ion-img>
+      <h1 class="name-apk text-primary font12">
+        <span>Share</span>
+        <span class="text-secondary">My</span>
+        <span>Hobbies</span>
+      </h1>
+      <ion-card *ngIf="stepRegistration === 1" class="card-block-register mx-0">
+        <div class="header-card">
+          <h6 class="text-bold text-primary font12 m-0 text-left">
+            Bienvenue... <span class="text-secondary">John Doe</span>
+          </h6>
+        </div>
+        <div class="content-card">
+          <p class="text-black text-left">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quis
+            nam
+          </p>
+          <p class="text-primary text-left">Selectionner votre sexe</p>
+          <div class="flex-bouton-bottom selected-option my-1">
+            <ion-button
+              (click)="form.sexe = 'Femme'"
+              [class]="form.sexe === 'Femme'?'active':''"
+            >
+              Femme
+            </ion-button>
+            <ion-button
+              (click)="form.sexe = 'Homme'"
+              [class]="form.sexe === 'Homme'?'active':''"
+            >
+              Homme
+            </ion-button>
+          </div>
+          <p class="text-primary text-left">Né(e) le</p>
+          <div class="d-flex justify-between">
+            <ion-select class="input-global-login">
+              
+            </ion-select>
+            <ion-select class="input-global-login">
+              
+            </ion-select>
+            <ion-select class="input-global-login">
+              
+            </ion-select>
+          </div>
+          <p class="text-primary text-left">Choisir un pays</p>
+          <ion-input
+            placeholder="Pays de residence"
+            class="input-global-login font11"
+          ></ion-input>
+          <div class="list-pays">
+            <p class="text-primary d-flex align-center">
+              <ion-icon
+                class="flag_pays pr-1"
+                src="../../../assets/icon/landing/flag-fr.svg"
+              ></ion-icon>
+              Etats Unis
+            </p>
+            <p class="text-primary d-flex align-center">
+              <ion-icon
+                class="flag_pays pr-1"
+                src="../../../assets/icon/landing/flag-fr.svg"
+              ></ion-icon>
+              Etats Unis
+            </p>
+            <p class="text-primary d-flex align-center">
+              <ion-icon
+                class="flag_pays pr-1"
+                src="../../../assets/icon/landing/flag-fr.svg"
+              ></ion-icon>
+              Etats Unis
+            </p>
+          </div>
+        </div>
+      </ion-card>
+      <ion-card *ngIf="stepRegistration === 2" class="card-block-register mx-0">
+        <div class="header-card">
+          <h6 class="text-bold text-primary font12 m-0 text-left">
+            Presque... <span class="text-secondary">John Doe</span>
+          </h6>
+        </div>
+        <div class="content-card">
+          <p class="text-black text-left">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quis
+            nam
+          </p>
+          <p class="text-primary text-left">Selectionner au moins un hobbie</p>
+          <ion-input
+            placeholder="Effectuer un filter"
+            class="input-global-login font11"
+          ></ion-input>
+          <div class="list-hobbies flex-bouton-bottom flex-wrap selected-option my-1">
+            <ion-button class="active" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie1.svg"
+              ></ion-icon>
+              Sky
+            </ion-button>
+            <ion-button class="" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie2.svg"
+              ></ion-icon>
+              Velo
+            </ion-button>
+            <ion-button class="active" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie3.svg"
+              ></ion-icon>
+              Roulleur
+            </ion-button>
+            <ion-button class="active" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie1.svg"
+              ></ion-icon>
+              Sky
+            </ion-button>
+            <ion-button class="" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie2.svg"
+              ></ion-icon>
+              Velo
+            </ion-button>
+            <ion-button class="" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie3.svg"
+              ></ion-icon>
+              Roulleur </ion-button
+            ><ion-button class="active" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie1.svg"
+              ></ion-icon>
+              Sky
+            </ion-button>
+            <ion-button class="active" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie2.svg"
+              ></ion-icon>
+              Velo
+            </ion-button>
+            <ion-button class="" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie3.svg"
+              ></ion-icon>
+              Roulleur </ion-button
+            ><ion-button class="active" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie1.svg"
+              ></ion-icon>
+              Sky
+            </ion-button>
+            <ion-button class="" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie2.svg"
+              ></ion-icon>
+              Velo
+            </ion-button>
+            <ion-button class="active" (click)="addHobbie()">
+              <ion-icon
+                class="pr-1"
+                src="../../../../assets/icon/default/hobbie3.svg"
+              ></ion-icon>
+              Roulleur
+            </ion-button>
+          </div>
+          <p class="text-primary text-left">Je veux comme partenaire</p>
+          <div class="flex-bouton-bottom selected-option option3 my-1">
+            <ion-button
+              (click)="form.partenaire = 'Femme'"
+              [class]="form.partenaire === 'Femme'?'active':''"
+            >
+              Femme
+            </ion-button>
+            <ion-button
+              (click)="form.partenaire = 'Homme'"
+              [class]="form.partenaire === 'Homme'?'active':''"
+            >
+              Homme
+            </ion-button>
+            <ion-button
+              (click)="form.partenaire = 'Les deux'"
+              [class]="form.partenaire === 'Les deux'?'active':''"
+            >
+              Les deux
+            </ion-button>
+          </div>
+        </div>
+      </ion-card>
+      <div *ngIf="stepRegistration === 3" class="video-block">
+        <h6 class="text-bold text-primary font12">
+          Ca y est... <span class="text-secondary">John Doe</span>
+        </h6>
+        <p class="text-black mb-1">
+          Votre inscription est terminé
+          <br>
+          Nous vous invitons à voir cette video
+        </p>
+        <div class="video">
+          <ion-img src="../../../../assets/img/video-smh.png"></ion-img>
+        </div>
+      </div>
+      <div class="flex-bouton-bottom block-dots mt-2">
+        <ion-button
+          [class]="stepRegistration > 1?'':'opacity0'"
+          (click)="stepPrecedent()"
+        >
+          Précedent
+        </ion-button>
+        <div class="d-flex dots">
+          <div [class]="stepRegistration === 1?'active':''" class="dots-item"></div>
+          <div [class]="stepRegistration === 2?'active':''" class="dots-item"></div>
+          <div [class]="stepRegistration === 3?'active':''" class="dots-item"></div>
+        </div>
+        <ion-button *ngIf="stepRegistration < 3" (click)="stepSuivant()"> Suivant </ion-button>
+        <p (click)="register()" *ngIf="stepRegistration === 3">Ingorer et commencer</p>
+      </div>
+    </ion-grid>
+  </div>
+</ion-content>

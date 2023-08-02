@@ -1,0 +1,47 @@
+
+<app-menu-header>Share</app-menu-header>
+
+<ion-tabs class="tab-cust">
+  
+  <ion-tab-bar class="direction-column slot-top" slot="top">
+    <div class="d-flex justify-between align-center w-100">
+      <div class="d-flex align-center">
+        <ion-icon (click)="showMenuClick()" name="menu" color="primary" class="pr-1 font25"></ion-icon>
+        <ion-img class="logo-default" src="../../assets/icon/favicon.png"></ion-img>
+        <h1 class="name-apk text-primary">
+          <span>Share</span>
+          <span class="text-secondary">My</span>
+          <span>Hobbies</span>
+        </h1>
+      </div>
+      <div class="d-flex align-center">
+        <div class="position-relative menu-top-msg-notif" (click)="verPage('message')">
+          <ion-icon class="pa-2" src="../../assets/icon/default/msg.svg"></ion-icon>
+          <div class="count">
+            4
+          </div>
+        </div>
+        <div class="position-relative menu-top-msg-notif" (click)="verPage('notification')">
+          <ion-icon class="pa-2" src="../../assets/icon/default/notif.svg"></ion-icon>
+          <div class="count">
+            4
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-tab-bar>
+  <ion-tab-bar slot="bottom" class="slot-bottom">
+    <ion-tab-button tab="accueil" (click)="tabActive = 'accueil'" [class]="tabActive === 'accueil'?'active':''">
+      <ion-icon src="../../assets/icon/landing/home.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="evenement" (click)="tabActive = 'evenement'" [class]="tabActive === 'evenement'?'active':''">
+      <ion-icon src="../../assets/icon/landing/event.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="groups" (click)="tabActive = 'groups'" [class]="tabActive === 'groups'?'active':''">
+      <ion-icon src="../../assets/icon/landing/group.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="community" (click)="tabActive = 'community'" [class]="tabActive === 'community'?'active':''">
+      <ion-icon src="../../assets/icon/default/hobbie.svg"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="25" viewBox="0 0 38 25">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 225 150">
+      <image width="225" height="150" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAACWAgMAAABV+geQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAI5X////tKTkDtutPAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+UHCxEDD0kK/JUAAAA9SURBVGje7csxAQAgDAOwIpJnatCDSgRUAE/yJylrl7nlxDRN0zRN0zRN0zRN0zRN0zRN0zRN0zRN0/w8H1gJAmyOGdK4AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIxLTA3LTExVDE3OjAzOjE1KzAwOjAw7Z2gvwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMS0wNy0xMVQxNzowMzoxNSswMDowMJzAGAMAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="Flag_of_France.svg" width="38" height="25" fill="url(#pattern)"/>
+</svg>

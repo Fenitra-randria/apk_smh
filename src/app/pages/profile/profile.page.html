@@ -1,0 +1,274 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="d-flex align-center px-2 justify-between">
+      <div class="d-flex align-center">
+        <ion-icon (click)="back()" style="transform: rotate(-90deg);" class="back" name="chevron-up"></ion-icon>
+        <ion-title>Profile de <span class="text-secondary">John Doe</span></ion-title>
+      </div>
+      <ion-icon color="dark" name="search"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="around-bottom">
+    <div class="info-personnel">
+      <div class="d-flex">
+        <div>
+            <div class="img-personne m-auto w-100">
+                <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+            </div>
+            <p class="text-primary font12 text-center">
+              <span class="text-bold">John Doe</span> <span class="text-tertiary">@john.doe</span>
+              <br>
+              <span class="text-tertiary">johndoe@gmail.com</span>
+            </p>
+        </div>
+        <div class="pl-2">
+          <p class="text-bold text-primary">
+            Mes recontres
+          </p>
+          <hr class="underlined-bottom">
+          <div class="d-flex align-center">
+            <ion-icon src="../../../assets/icon/default/rencontre/main.svg"></ion-icon>
+            <p class="pl-1 text-primary">
+              15
+            </p>
+          </div>
+          <p class="text-bold text-primary">
+            Finalisation du profile
+          </p>
+          <hr class="underlined-bottom">
+          <div class="d-flex align-center">
+            <ion-icon color="primary" name="person"></ion-icon>
+            <p class="pl-1 text-primary">
+              15%
+            </p>
+          </div>
+          <p class="text-bold text-primary">
+            Récomponces
+          </p>
+          <hr class="underlined-bottom">
+          <div class="d-flex align-center mt-1">
+            <ion-icon class="px-1" src="../../../assets/icon/default/grade/badge1.svg"></ion-icon>
+            <ion-icon class="px-1" src="../../../assets/icon/default/grade/badge2.svg"></ion-icon>
+            <ion-icon class="px-1" src="../../../assets/icon/default/grade/badge3.svg"></ion-icon>
+            <ion-icon class="px-1" src="../../../assets/icon/default/grade/badge4.svg"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-card>
+  
+  <div class="menu-tab d-flex align-center">
+    <ion-button (click)="activeMenu='activite'" [class]="activeMenu==='activite'?'active':''">
+      Activité
+    </ion-button>
+    <ion-button (click)="activeMenu='Gallery'" [class]="activeMenu==='Gallery'?'active':''">
+      Gallery
+    </ion-button>
+    <ion-button (click)="activeMenu='A propos'" [class]="activeMenu==='A propos'?'active':''">
+      A propos
+    </ion-button>
+  </div>
+  <div *ngIf="activeMenu==='activite'">
+    <div class="list-publication">
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <app-itempublication></app-itempublication>
+      <div class="d-flex justify-center align-center">
+        <p class="text-primary">
+          chargement...
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="activeMenu==='Gallery'">
+    <div class="block-card">
+      <div class="block-card-header d-flex align-center justify-between">
+        <p class="text-primary px-2 m-0">
+          Photos des <span class="text-secondary">publications</span>
+        </p>
+        <p class="text-primary px-2 m-0">
+          Voir tous
+        </p>
+      </div>
+      <div class="list-img-gallery">
+        <ion-row>
+          <ion-col size="4">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>  
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+        </ion-col>
+        <ion-col size="4">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="block-card">
+      <div class="block-card-header d-flex align-center justify-between">
+        <p class="text-primary px-2 m-0">
+          Photos de <span class="text-secondary">profile</span>
+        </p>
+        <p class="text-primary px-2 m-0">
+          Voir tous
+        </p>
+      </div>
+      <div class="list-img-gallery">
+        <ion-row>
+          <ion-col size="4">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>  
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+        </ion-col>
+        <ion-col size="4">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="block-card">
+      <div class="block-card-header d-flex align-center justify-between">
+        <p class="text-primary px-2 m-0">
+          Photos de <span class="text-secondary">couverture</span>
+        </p>
+        <p class="text-primary px-2 m-0">
+          Voir tous
+        </p>
+      </div>
+      <div class="list-img-gallery">
+        <ion-row>
+          <ion-col size="4">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>  
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+          <ion-col size="4">
+            <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+        </ion-col>
+        <ion-col size="4">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="activeMenu==='A propos'">
+    <div class="block-card">
+      <div class="block-card-header d-flex align-center justify-between">
+        <p class="text-primary px-2 m-0">
+          Mes <span class="text-secondary">Hobbies</span>
+        </p>
+        <p class="text-primary px-2 m-0">
+          Voir tous
+        </p>
+      </div>
+      <div class="list-hobbie row">
+        <ion-row>
+          <ion-col size="6">
+            <ion-card class="around-bottom">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+                <p class="text-primary text-bold font12 text-center">
+                  Foot ball
+                </p>
+                <p class="text-center">
+                  30 Activité
+                </p>
+            </ion-card>
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="around-bottom">
+              <ion-img src="../../../assets/img/pub1.jpg"></ion-img>
+                <p class="text-primary text-bold font12 text-center">
+                  Foot ball
+                </p>
+                <p class="text-center">
+                  30 Activité
+                </p>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="block-card">
+      <div class="block-card-header d-flex align-center justify-between">
+        <p class="text-primary px-2 m-0">
+          Informations lié à <span class="text-secondary">mon compte</span>
+        </p>
+      </div>
+      <div class="list-invte">
+        <ion-card class="around-bottom">
+          <ion-row>
+            <ion-col size="6">
+              <p class="text-primary">
+                Nom
+              </p>
+              <p>
+                John Doe
+              </p>
+            </ion-col>
+            <ion-col size="6">
+              <p class="text-primary">
+                Nom
+              </p>
+              <p>
+                John Doe
+              </p>
+            </ion-col>
+            <ion-col size="6">
+              <p class="text-primary">
+                Nom
+              </p>
+              <p>
+                John Doe
+              </p>
+            </ion-col>
+            <ion-col size="6">
+              <p class="text-primary">
+                Nom
+              </p>
+              <p>
+                John Doe
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </div>
+    </div>
+    <ion-button class="action-plus-floate">
+      <ion-icon name="add"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

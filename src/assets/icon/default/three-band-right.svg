@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="227.201" height="296.511" viewBox="0 0 227.201 296.511">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.041" y1="0.5" x2="0.685" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#275ba7"/>
+      <stop offset="1" stop-color="#74acff"/>
+    </linearGradient>
+    <filter id="Soustraction_1" x="0" y="0" width="227.201" height="296.511" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Soustraction_1)">
+    <path id="Soustraction_1-2" data-name="Soustraction 1" d="M4459.937-1565.306a23.942,23.942,0,0,1-10.809-2.589,23.788,23.788,0,0,1-8.659-7.536,23.587,23.587,0,0,1-3.933-17.74,23.586,23.586,0,0,1,9.762-15.325l123.22-86.279v57.963l-95.986,67.21A23.6,23.6,0,0,1,4459.937-1565.306Zm-75.852-20.266a23.937,23.937,0,0,1-10.809-2.589,23.786,23.786,0,0,1-8.659-7.537,23.583,23.583,0,0,1-3.933-17.739,23.581,23.581,0,0,1,9.763-15.324l199.071-139.392v57.962L4397.68-1589.867A23.6,23.6,0,0,1,4384.085-1585.572Zm5.548-79.55a23.939,23.939,0,0,1-10.808-2.589,23.789,23.789,0,0,1-8.659-7.536,23.584,23.584,0,0,1-3.933-17.74,23.584,23.584,0,0,1,9.763-15.325l193.522-135.506v57.963l-166.29,116.437A23.6,23.6,0,0,1,4389.633-1665.121Z" transform="translate(-4351.32 1849.82)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
